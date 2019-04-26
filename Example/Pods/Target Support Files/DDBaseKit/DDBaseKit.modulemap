@@ -1,0 +1,6 @@
+framework module DDBaseKit {
+  umbrella header "DDBaseKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

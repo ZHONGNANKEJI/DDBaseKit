@@ -1,0 +1,6 @@
+framework module Pods_DDBaseKit_Tests {
+  umbrella header "Pods-DDBaseKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

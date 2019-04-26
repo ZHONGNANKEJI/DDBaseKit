@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		188BF0D2EB9A835F0DF4BA41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		188BF0D2EB9A835F0DF4BA41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		367528843588F80E14B1D018 /* Pods-DDBaseKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBaseKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-DDBaseKit_Example/Pods-DDBaseKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD4C3C289966ED458D6525A /* Pods_DDBaseKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDBaseKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* DDBaseKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDBaseKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,9 +61,9 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AB7DF0759F6249204CD513CD /* DDBaseKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DDBaseKit.podspec; path = ../DDBaseKit.podspec; sourceTree = "<group>"; };
+		AB7DF0759F6249204CD513CD /* DDBaseKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DDBaseKit.podspec; path = ../DDBaseKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C93688DC5040D136C4AFADC3 /* Pods-DDBaseKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBaseKit_Example.release.xcconfig"; path = "Target Support Files/Pods-DDBaseKit_Example/Pods-DDBaseKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D1B28B37230C3E8AA82AF934 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D1B28B37230C3E8AA82AF934 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D7CC82C076D7388793993704 /* Pods-DDBaseKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBaseKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DDBaseKit_Tests/Pods-DDBaseKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC355B85EAB27CD445842EF6 /* Pods_DDBaseKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDBaseKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE9CB7C2FD55EAEAEBEB5C5 /* Pods-DDBaseKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBaseKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-DDBaseKit_Tests/Pods-DDBaseKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 				D7CC82C076D7388793993704 /* Pods-DDBaseKit_Tests.debug.xcconfig */,
 				FEE9CB7C2FD55EAEAEBEB5C5 /* Pods-DDBaseKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -326,13 +325,31 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DDBaseKit_Example/Pods-DDBaseKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/DDBaseKit/DDBaseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController/RTRootNavigationController.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DDBaseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

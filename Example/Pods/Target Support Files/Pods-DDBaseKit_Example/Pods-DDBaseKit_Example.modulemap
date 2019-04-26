@@ -1,0 +1,6 @@
+framework module Pods_DDBaseKit_Example {
+  umbrella header "Pods-DDBaseKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

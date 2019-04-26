@@ -7,7 +7,8 @@
 //
 
 #import "DDViewController.h"
-
+#import <DDBaseKit/DDBaseKit.h>
+#import <DDBaseKit/ApplicationManager.h>
 @interface DDViewController ()
 
 @end
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
